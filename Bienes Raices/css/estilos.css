@@ -1,0 +1,331 @@
+/*divido todo en clases*/
+.site-header{
+/*Esto seria el bloque osea que todo el bloque tendria el fondo de la imagen,
+ y como se veria la imagen*/
+    background-image: url(../img/header.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height: 150vh;
+    background-size: cover;
+}
+.contenido-header{
+/*esto seria todos los elementos, como se distribuyen. Osea el header tiene una barra y un h1,
+como se comportan entre ellos.*/
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+}
+.site-header h1{
+/*estos serian todos los h1 dentro de site-header*/
+    color: white;
+    max-width: 600px;
+    margin-top: 5%;
+    margin-right: 2%;
+    margin-left: 4%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+}
+
+.barra{
+/*aca estaria el logo y los enlaces. Osea la manera en que estos se comportan*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+.enlaces{
+/*y esto serian solo los enlaces*/
+    text-decoration: none;
+    display: flex;
+    color: white;
+}
+.contenedor{    
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.enlaces p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+/**************************************************************************************************/
+/*Mas sobre nosotros*/
+
+.site-nosotros{
+ background-color: white;
+ height: 50vh;   
+}
+.site-nosotros h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;  
+    text-align: center; 
+}
+.contenido-nosotros{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+}
+.site-iconos{
+    display: block;
+    justify-content: space-around;
+    text-align: center;
+    line-height: 1.5em;
+}
+/********************************************************************************************/
+/*Ventas*/
+.site-ventas{
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.site-ventas h2{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+}
+
+.ventas-contenido{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+}
+.venta-detalle{
+    display:flex;
+    flex-direction: column;
+    text-align: start;
+    height: 100%;
+    width: 25%;
+    background-color: rgb(224, 218, 218);
+    border: 1px solid gray;
+    text-align: left;
+    
+}
+.venta-detalle img{
+    width: 100%;
+}
+.venta-detalle p{
+    text-align: left;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+.venta-detalle h3{
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+.logos-ventas{
+    display:flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-around;
+}
+.logos-ventas img{
+    height: 50%;
+    
+}
+.logos-ventas p{
+    padding-bottom: 2rem;
+}
+
+.ver-propiedad{
+    width: 70%;
+    height: 50px;
+    margin: 0% 15% 10% 15%;
+    position: relative;
+    bottom: 5px;
+    background-color: orange;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+/************************************************************** boton ver todos ********************/
+.ver-todas{
+    height: 5vw;
+}
+.ver-todos-button{
+    width: 10%;
+    height: 70%;
+    background-color: green;
+    text-align: center;
+    color: white;
+    margin: 5% 10% 5% 80%;
+    line-height: 2.5em;
+}
+/******************************* Contacto ***********************************/
+.contacto-site{
+    background-image: url("../img/encuentra.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: contain;
+    height: 70vh ;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.contacto-titulo{
+    padding: 7% 5% 0%;
+    font-size: 1.5em;
+}
+.contacto-descripcion{
+    padding: 3% 5% 0%;
+    font-size:1.3em;
+}
+.contacto-boton{
+    background-color: orange;
+    color: white;
+    width: 15%;
+    height: 13%;
+    margin: 5% 5%;
+    text-align: center;
+    line-height: 2.5em;
+    font-size: 1.5em;
+}
+/************************** blog y comentarops ************************************/
+.site-blog-y-ycomentarios{
+    height: 80vh;
+    margin: 0% 5% 5% 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.nuestro-blog{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    top:0px;
+}
+/*********************blog********************************************/
+.blog-titulo{
+    color: black;
+    text-align: center;
+    font-size: 1.5em;
+}
+.blog-posteo{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.posteo{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: row;
+}
+
+.posteo-imagen{
+    width: 40%;
+    height: 100%;
+    justify-content: start;
+}
+.posteo-imagen img{
+    width: 100%;
+    height: 100%;
+}
+
+.posteo-texto
+{
+    width: 60%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: start;
+    padding: 0% 0% 5% 5%;
+    line-height: 1.5em;
+}
+.posteo-texto h4{
+    color: black;
+    font-weight: bolder;
+    font-size: 1.5em;
+
+}
+/*.posteo-texto-escrito{
+    text-align: start;
+}*/
+
+
+/******************** comentario *************************************/
+.comentarios{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    top: 0px;
+}
+.comentarios-titulo{
+    text-align: center;
+    color:black;
+    font-size: 1.5em;
+}
+
+.comentarios-fondo{
+    background-color: lawngreen;
+    border-radius: 17px 17px 17px 17px;
+    -moz-border-radius: 17px 17px 17px 17px;
+    -webkit-border-radius: 17px 17px 17px 17px;
+    position: relative;
+    height: 80%;
+}
+.comentario-frase{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+}
+.comentario-frase img{
+    width: 20%;
+    height: 50% ;
+    padding: 0% 5%;
+    position: relative;
+    top: 0px;
+}
+.comentario-frase p{
+    width: 80%;
+    height: auto;
+    padding: 20% 0% 0% 5%;
+    color: white;
+    text-align: left;
+    line-height: 2em;
+    font-size: 1.2em;
+}
+.comentario-nombre
+{
+    width: auto;
+    height: auto;
+    padding: 0% 5%;
+}
+.comentario-nombre p{
+    text-align: right;
+    color: white;
+    font-size: 1.5em;
+}
+/********************************************* pie de pagina********************************/   
+.pieDePagina{
+    height: 5vw;
+    padding:0% 5%;
+    background-color: dimgrey;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.derechos-reservados{
+    color: white;
+}
+.pieDePagina img{   
+    height: 120%;
+    width: 10%;
+}
